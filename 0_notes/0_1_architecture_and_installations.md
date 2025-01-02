@@ -10,7 +10,7 @@ installation packages
 4. [Run the docker image](#run_docker_image)
 
 ### Architecture diagram
-![screenshot](0_notes/images/arch_v4_workshops.jpg)
+![screenshot](images/arch_v4_workshops.jpg)
 
 
 ### Action Items
@@ -20,8 +20,8 @@ Test docker installation using following command
     ```bash
     docker run hello-world
     ```
-    ![screenshot](0_notes/images/docker-hello-run.png)  
-    ![screenshot](0_notes/images/docker-bash-container-test.png)
+    ![screenshot](images/docker-hello-run.png)  
+    ![screenshot](images/docker-bash-container-test.png)
 
 
 2. Create docker file  <a name="create_docker_file"></a>  
@@ -47,4 +47,4 @@ point to run python script
     ```python
     docker run -it test:pandas
     ```
-   ![screenshot](0_notes/images/docker_package_and_run.png)
+   ![screenshot](images/docker_package_and_run.png)
