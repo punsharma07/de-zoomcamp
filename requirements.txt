@@ -1,1 +1,6 @@
 grip
+notebook
+pandas
+pyarrow
+sqlalchemy
+psycopg2-binary

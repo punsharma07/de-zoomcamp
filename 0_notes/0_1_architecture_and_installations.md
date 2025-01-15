@@ -17,7 +17,7 @@ installation packages
 1. Install docker <a name="Install_docker"></a>   
 https://docs.docker.com/desktop/setup/install/mac-install/  
 Test docker installation using following command 
-    ```bash
+    ```terminal
     docker run hello-world
     ```
     ![screenshot](images/docker-hello-run.png)  
@@ -28,7 +28,7 @@ Test docker installation using following command
 Create Dockerfile in root dir with python 3.9 as base image and install pandas. Set entry 
 point to run python script  
 
-    ```text
+    ```dockerfile
    FROM python:3.9
    RUN pip install pandas
    WORKDIR  /app
@@ -39,12 +39,28 @@ point to run python script
    ```
 
 3. Build docker image <a name="build_docker_image"></a>
-    ```python
+    ```terminal
     docker build -t test:pandas .
     ```
    
 4. Run the docker image <a name="run_docker_image"></a>
-    ```python
+    ```terminal
     docker run -it test:pandas
     ```
    ![screenshot](images/docker_package_and_run.png)
+
+5. Create postgres container through command line
+   ```terminal
+   docker run -it  \
+   -e POSTGRES_USER="<user>" \
+   -e POSTGRES_PASSWORD="<password>" \
+   -e POSTGRES_DB="ny_taxi" \
+   -p 5432:5432 \
+   -v $(pwd)/2_docker_sql/postgres_sql_data:/var/lib/postgresql/data postgres:13 
+   ```
+6. Test postgres connection (using dbeaver)
+ ![screenshot](images/dbeaver_postgres_connection_test.png)
+
+7. Download New York Yellow taxi Dataset parquet file from this [link](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+and load to postgres table as shown in file [upload_data_parquet.ipynb](2_docker_sql/upload_data_parquet.ipynb) or better 
+readable python file [ingest_nytaxi_data.py](2_docker_sql/ingest_nytaxi_data.py)
