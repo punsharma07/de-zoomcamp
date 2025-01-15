@@ -15,6 +15,6 @@ python3 -m venv env && source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-
+For more details, please refer [notes section](https://github.com/punsharma07/de-zoomcamp/blob/a3e4aaa46118da914f9f960711d8ecfdb3a38dc7/0_notes/0_1_architecture_and_installations.md)
 
 

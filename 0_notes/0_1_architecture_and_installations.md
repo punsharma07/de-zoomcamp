@@ -62,5 +62,5 @@ point to run python script
  ![screenshot](images/dbeaver_postgres_connection_test.png)
 
 7. Download New York Yellow taxi Dataset parquet file from this [link](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
-and load to postgres table as shown in file [upload_data_parquet.ipynb](2_docker_sql/upload_data_parquet.ipynb) or better 
-readable python file [ingest_nytaxi_data.py](2_docker_sql/ingest_nytaxi_data.py)
+and load to postgres table as shown in file [upload_data_parquet.ipynb](https://github.com/punsharma07/de-zoomcamp/blob/a3e4aaa46118da914f9f960711d8ecfdb3a38dc7/2_docker_sql/upload_data_parquet.ipynb) 
+or better readable python file [ingest_nytaxi_data.py](https://github.com/punsharma07/de-zoomcamp/blob/a3e4aaa46118da914f9f960711d8ecfdb3a38dc7/2_docker_sql/ingest_nytaxi_data.py)
