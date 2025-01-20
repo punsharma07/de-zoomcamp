@@ -8,9 +8,11 @@ installation packages
 2. [Create docker file](#create_docker_file)
 3. [Build docker image](#build_docker_image)
 4. [Run the docker image](#run_docker_image)
-
-### Architecture diagram
-![screenshot](images/arch_v4_workshops.jpg)
+5. [Create postgres container through command line](#pg_container)
+6. [Test postgres connection (using dbeaver)](#test_pg)
+7. [Download New York Yellow taxi Dataset parquet file](#dataset)
+8. [Create docker compose file](#compose)
+9. [Spin-up docker to create containers](#spinup)
 
 
 ### Action Items
@@ -49,7 +51,8 @@ point to run python script
     ```
    ![screenshot](images/docker_package_and_run.png)
 
-5. Create postgres container through command line
+
+5. Create postgres container through command line <a name="pg_container"></a> 
    ```terminal
    docker run -it  \
    -e POSTGRES_USER="admin" \
@@ -58,13 +61,19 @@ point to run python script
    -p 5432:5432 \
    -v $(pwd)/2_docker_sql/postgres_sql_data:/var/lib/postgresql/data postgres:13 
    ```
-6. Test postgres connection (using dbeaver)
+   
+6. Test postgres connection (using dbeaver)  <a name="test_pg"></a>
  ![screenshot](images/dbeaver_postgres_connection_test.png)
 
-7. Download New York Yellow taxi Dataset parquet file from this [link](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+
+7. Download New York Yellow taxi Dataset parquet file:   <a name="dataset"></a>
+Download from [link](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 and load to postgres table as shown in file [upload_data_parquet.ipynb](https://github.com/punsharma07/de-zoomcamp/blob/a3e4aaa46118da914f9f960711d8ecfdb3a38dc7/2_docker_sql/upload_data_parquet.ipynb) 
 or better readable python file [ingest_nytaxi_data.py](https://github.com/punsharma07/de-zoomcamp/blob/a3e4aaa46118da914f9f960711d8ecfdb3a38dc7/2_docker_sql/ingest_nytaxi_data.py)
-8. Create docker compose file and define poatgres, pgadmin and anaconda services:
+
+
+8. Create docker compose file:  <a name="compose"></a>
+Define poatgres, pgadmin and anaconda services:
 This is to minimize manual installation on GCP VMs later
     ```yaml 
     services:
@@ -106,7 +115,8 @@ This is to minimize manual installation on GCP VMs later
           "
         tty: true # “keep the container running” 
     ```
-9. Spin-up docker to create containers:
+   
+9. Spin-up docker to create containers: <a name="spinup"></a>
     ```bash 
    docker compose up -d
    docker ps
