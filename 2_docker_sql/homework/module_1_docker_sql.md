@@ -1,7 +1,5 @@
 
-## Question 1. Understanding docker first run 
-
-Run docker with the `python:3.12.8` image in an interactive mode, use the entrypoint `bash`.
+## Question 1. Understanding docker first run
 
 What's the version of `pip` in the image?
 
@@ -10,7 +8,8 @@ What's the version of `pip` in the image?
 - 23.3.1
 - 23.2.1
 
-Answer: 24.3.1
+Answer: 24.3.1 
+
 ![img.png](hw_images/hw1_python3128_pull.png)
 ![img.png](hw_images/HW1_pip_version.png)
 
@@ -56,7 +55,8 @@ volumes:
 - postgres:5432
 - db:5432
 
-### Answer: postgres:5432
+### Answer: postgres:5432 
+
 ![img.png](hw_images/hw1-docker-compose.png)
 ![img.png](hw_images/hw1-docker-ps.png)
 ![img.png](hw_images/hw1-postgres-host.png)
