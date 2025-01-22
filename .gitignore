@@ -3,3 +3,6 @@
 env/
 .ipynb_checkpoints/
 2_docker_sql/postgres_sql_data/
+green_tripdata.csv.gz
+yellow_tripdata_2024-01.parquet
+taxi_zone_lookup.csv

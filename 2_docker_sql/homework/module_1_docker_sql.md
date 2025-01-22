@@ -100,7 +100,8 @@ Answers:
 - 104,793;  202,661;  109,603;  27,678;  35,189
 - 104,838;  199,013;  109,645;  27,688;  35,202
 
-Correct answer is: 104,802;  198,924;  109,603;  27,678;  35,189
+**Correct answer is: 104,802;  198,924;  109,603;  27,678;  35,189**
+
 ```sql
 select 'Up to 1 mile' as distance,
 count(*) 
@@ -155,7 +156,8 @@ Tip: For every day, we only care about one single trip with the longest distance
 - 2019-10-26
 - 2019-10-31
 
-Solution is : 2019-10-31
+**Solution is : 2019-10-31**
+
 ```sql
 select lpep_pickup_datetime :: date, 
 max(trip_distance) as max_trip_distance_of_the_day
@@ -183,6 +185,7 @@ Consider only `lpep_pickup_datetime` when filtering by date.
 - Bedford, East Harlem North, Astoria Park
 
 **Solution is: East Harlem North, East Harlem South, Morningside Heights**
+
 ```sql
 select "PULocationID", tzl."Zone",  sum(gt.total_amount) as total_amount_by_zones 
 from green_tripdata gt 
@@ -215,6 +218,7 @@ We need the name of the zone, not the ID.
 - East Harlem South
 
 **Solution is: JFK Airport**
+
 ```sql
 select tzl_do."Zone"
 from
