@@ -22,8 +22,8 @@ Test docker installation using following command
     ```terminal
     docker run hello-world
     ```
-    ![screenshot](images/docker-hello-run.png)  
-    ![screenshot](images/docker-bash-container-test.png)
+    ![screenshot](assets/docker-hello-run.png)  
+    ![screenshot](assets/docker-bash-container-test.png)
 
 
 2. Create docker file  <a name="create_docker_file"></a>  
@@ -49,7 +49,7 @@ point to run python script
     ```terminal
     docker run -it test:pandas
     ```
-   ![screenshot](images/docker_package_and_run.png)
+   ![screenshot](assets/docker_package_and_run.png)
 
 
 5. Create postgres container through command line <a name="pg_container"></a> 
@@ -63,7 +63,7 @@ point to run python script
    ```
    
 6. Test postgres connection (using dbeaver)  <a name="test_pg"></a>
- ![screenshot](images/dbeaver_postgres_connection_test.png)
+ ![screenshot](assets/dbeaver_postgres_connection_test.png)
 
 
 7. Download New York Yellow taxi Dataset parquet file:   <a name="dataset"></a>
@@ -121,8 +121,8 @@ This is to minimize manual installation on GCP VMs later
    docker compose up -d
    docker ps
    ```
-    ![screenshot](images/docker-compose-up.png)
+    ![screenshot](assets/docker-compose-up.png)
 After spinning up docker, we should be able to access pgadmin at [http://localhost:8080/browser/](http://localhost:8080/browser/) 
 and jupyter-notebook at [http://localhost:8888/tree](http://localhost:8888/tree)
-![screenshot](images/pgadmin-on-local.png)
-![screenshot](images/Jupyter-nb-on-local.png)
+![screenshot](assets/pgadmin-on-local.png)
+![screenshot](assets/Jupyter-nb-on-local.png)
