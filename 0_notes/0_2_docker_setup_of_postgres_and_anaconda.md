@@ -87,7 +87,7 @@ This is to minimize manual installation on GCP VMs later
         volumes:
           - ./postgres_sql_data:/var/lib/postgresql/data:rw
         ports:
-        - "5432:5432"
+          - "5432:5432"
     
       # pgadmin container to interact with data using SQL queries
       pgadmin:
@@ -113,7 +113,8 @@ This is to minimize manual installation on GCP VMs later
           && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='0.0.0.0'
           --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password='' 
           "
-        tty: true # “keep the container running” 
+        tty: true 
+        # “keep the container running” 
     ```
    
 9. Spin-up docker to create containers: <a name="spinup"></a>
