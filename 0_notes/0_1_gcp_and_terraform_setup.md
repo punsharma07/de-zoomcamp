@@ -81,7 +81,8 @@ connection at http://localhost:8888/tree
 1. Create a new service account(SA) in GCP's IAM & Admin. Provide appropriate Compute, Bigquery
 and storage access to this SA. Google documentation: https://cloud.google.com/iam/docs/service-accounts-create#creating
 2. Create SA's `.json` credential file and save in some secured directory
-3. Create main.tf and variable.tf files #TODO link here
+3. Create [main.tf](https://github.com/punsharma07/simple-dataengineering/blob/main/1_terraform/main.tf)
+and [variable.tf](https://github.com/punsharma07/simple-dataengineering/blob/main/1_terraform/variables.tf) files
 4. Run - 
    1. `terraform init`: Get the providers I need
    2. `terraform plan`: What am I about to do? 
