@@ -1,4 +1,5 @@
-1. Create Google Cloud platform account and new project `de-zoomcamp`
+### GCP new VM instance setup and running ingest_nytaxi_data.py script in VM to load data in postgres
+2. Create Google Cloud platform account and new project `de-zoomcamp`
 ![img.png](assets/gcp_dashboard.png)
 2. Generate new ssh key on local terminal and copy public key in GCP's metadata by following Google's 
 documentation https://cloud.google.com/compute/docs/connect/add-ssh-keys
@@ -46,7 +47,7 @@ documentation https://cloud.google.com/compute/docs/connect/add-ssh-keys
    ```
    ![img.png](assets/docker-hello-world.png)
 
-6. Git clone this repo to new GCP VM:
+6. Git clone this repo to new GCP VM: 
 ![img.png](assets/git_clone.png)
 7. Using Visual Sudio Code, connect to remote SSH to access the code on new VM
 8. Install requirements.txt to install required packages
@@ -75,3 +76,23 @@ connection at http://localhost:8888/tree
    terraform --version
    ```
 ![img.png](assets/terraform_install.png)
+
+### Terraform setup on GCP
+1. Create a new service account(SA) in GCP's IAM & Admin. Provide appropriate Compute, Bigquery
+and storage access to this SA. Google documentation: https://cloud.google.com/iam/docs/service-accounts-create#creating
+2. Create SA's `.json` credential file and save in some secured directory
+3. Create main.tf and variable.tf files #TODO link here
+4. Run - 
+   1. `terraform init`: Get the providers I need
+   2. `terraform plan`: What am I about to do? 
+   3. `terraform apply`: Do what is in the df files
+   4. `terraform destroy`: Remove everything defined in the tf files 
+   ![img.png](assets/tf_init.png)
+   ![img_1.png](assets/tf_plan.png)
+   ![img_2.png](assets/tf_apply.png)
+   At this step, we will be able to see the buckets and new datasets created by terraform in GCP
+   ![img.png](assets/new_bucket.png)
+   ![img_1.png](assets/dataset.png)
+   `terraforn destroy` will destroy any created providers (buckets/datasets) on GCP
+  
+
