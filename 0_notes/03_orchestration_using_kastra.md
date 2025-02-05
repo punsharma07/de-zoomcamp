@@ -22,5 +22,5 @@ https://kestra.io/docs/installation/docker-compose
    * ![img.png](assets/gantt_chart.png)
    * ![img_1.png](assets/topology.png)
    * Backfill running (Choose Trigger > Backfill and set some old date range)
-   ![img.png](backfill_run.png)
+   ![img.png](assets/backfill_run.png)
 5. Running kestra pipelines on bigquery

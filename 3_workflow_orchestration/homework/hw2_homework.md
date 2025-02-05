@@ -12,7 +12,7 @@ Quiz:
 - 134.5 MB
 - 364.7 MB
 - 692.6 MB 
-
+![img.png](../../0_notes/assets/hw2_ans01.png)
 ![img.png](../../0_notes/assets/hw2_ans1.png)
 
 2) What is the rendered value of the variable `file` when the inputs `taxi` is set to `green`, `year` is set to `2020`, and `month` is set to `04` during execution?
