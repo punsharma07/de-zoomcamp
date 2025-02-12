@@ -1,7 +1,9 @@
 .DS_Store
 .idea/
 env/
+keys/
 .ipynb_checkpoints/
+4_data-warehouse/*.parquet
 2_docker_sql/postgres_sql_data/
 2_docker_sql/*.parquet
 2_docker_sql/homework/*.csv*
