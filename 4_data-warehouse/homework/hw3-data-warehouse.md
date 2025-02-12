@@ -24,8 +24,9 @@ Question 1: What is count of records for the 2024 Yellow Taxi Data?
 - 65,623
 - 840,402
 - **20,332,093**  <-- :white_check_mark: This is the right answer
-- 85,431,289
-    ![img.png](../../0_notes/assets/hw3_ans1.png)
+- 85,431,289  
+
+![img.png](../../0_notes/assets/hw3_ans1.png)
 
 
 ## Question 2:
@@ -35,7 +36,8 @@ What is the **estimated amount** of data that will be read when this query is ex
 - 18.82 MB for the External Table and 47.60 MB for the Materialized Table
 - **0 MB for the External Table and 155.12 MB for the Materialized Table** <-- :white_check_mark: This is the right answer
 - 2.14 GB for the External Table and 0MB for the Materialized Table
-- 0 MB for the External Table and 0MB for the Materialized Table
+- 0 MB for the External Table and 0MB for the Materialized Table  
+
 ![img.png](../../0_notes/assets/hw3_ans2a.png)
 ![img.png](../../0_notes/assets/hw3_ans2b.png)
 
@@ -54,15 +56,17 @@ How many records have a fare_amount of 0?
 - 128,210
 - 546,578
 - 20,188,016
-- **8,333** <-- :white_check_mark: This is the right answer
+- **8,333** <-- :white_check_mark: This is the right answer    
+
 ![img.png](../../0_notes/assets/hw3_ans4.png)
-- 
+
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
 - **Partition by tpep_dropoff_datetime and Cluster on VendorID** <-- :white_check_mark: This is the right answer
 - Cluster on by tpep_dropoff_datetime and Cluster on VendorID
 - Cluster on tpep_dropoff_datetime Partition by VendorID
-- Partition by tpep_dropoff_datetime and Partition by VendorID
+- Partition by tpep_dropoff_datetime and Partition by VendorID  
+
 ![img.png](../../0_notes/assets/hw3_ans5.png)
 
 ## Question 6:
@@ -76,7 +80,8 @@ Choose the answer which most closely matches.</br>
 - 12.47 MB for non-partitioned table and 326.42 MB for the partitioned table
 - **310.24 MB for non-partitioned table and 26.84 MB for the partitioned table** <-- :white_check_mark: This is the right answer
 - 5.87 MB for non-partitioned table and 0 MB for the partitioned table
-- 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table
+- 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table  
+
 ![img.png](../../0_notes/assets/hw3_ans6.png)
 ![img_1.png](../../0_notes/assets/hw3_ans6b.png)
 
